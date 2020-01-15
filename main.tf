@@ -1,13 +1,6 @@
 provider "aws" {
   region = "us-east-1" //N.California
 }
-terraform {
-  backend "s3" {
-	bucket = "terradereban"
-	key    = "github/terraform.tfstate"
-	region = "us-east-1"
-  }
-}
 
 resource "aws_security_group" "main_security_group" {
   name        = var.security_group_name
