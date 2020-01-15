@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_security_group" "main_security_group" {
   name        = var.security_group_name
   description = "Ctetated by DE with terraform ${var.security_group_name}"
-  vpc_id      = "vpc-0125681c8ea57944b"
+  vpc_id      = "vpc-b041f1cb"
   tags = {
   Name = "coord" }
 }
