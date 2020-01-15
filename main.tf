@@ -1,11 +1,11 @@
 provider "aws" {
-  region = "us-west-1" //N.California
+  region = "us-east-1" //N.California
 }
 terraform {
   backend "s3" {
 	bucket = "terradereban"
 	key    = "github/terraform.tfstate"
-	region = "us-west-1"
+	region = "us-east-1"
   }
 }
 
