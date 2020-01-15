@@ -3,8 +3,8 @@ provider "aws" {
 }
 terraform {
   backend "s3" {
-	bucket = "dereban-terraform"
-	key    = "dev/security_group/terraform.tfstate"
+	bucket = "terradereban"
+	key    = "github/terraform.tfstate"
 	region = "us-west-1"
   }
 }
